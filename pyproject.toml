@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anomaly-detection-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented outlier-flagging capability against Python source"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+anomaly-detection-claim-audit = "anomaly_detection_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["anomaly_detection_claim_audit*"]
